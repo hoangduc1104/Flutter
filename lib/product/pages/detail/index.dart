@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kt2/product/helper/padding.dart';
+import 'package:kt2/product/pages/cart/index.dart';
+import 'package:kt2/product/pages/detail/BottomBar.dart';
 
 import '../../model/Product.dart';
 
@@ -88,7 +90,7 @@ class ItemDetail extends StatelessWidget {
                       Text(
                         "\$${item.price}",
                         style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.red,
                             fontWeight: FontWeight.bold,
                             fontSize: 20),
                       ),
@@ -106,51 +108,9 @@ class ItemDetail extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ClipOval(
-                    child: Material(
-                      color: Color(0xffF2F2F2), // Button color
-                      child: InkWell(
-                        // Splash color
-                        onTap: () {},
-                        child: SizedBox(
-                            width: 50,
-                            height: 50,
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              color: Colors.grey,
-                              size: 20,
-                            )),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Container(
-                    width: 300,
-                    decoration: BoxDecoration(
-                      color: Color(0xff3D3E70),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: OutlinedButton(
-                      onPressed: null,
-                      style: ButtonStyle(
-                          shape: MaterialStateProperty.all(
-                              RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30.0))),
-                          padding: MaterialStateProperty.all<EdgeInsets>(
-                            EdgeInsets.all(20),
-                          )),
-                      child: Text("Buy", style: TextStyle(color: Colors.white)),
-                    ),
-                  ),
-                ],
-              )
             ],
           )),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }
