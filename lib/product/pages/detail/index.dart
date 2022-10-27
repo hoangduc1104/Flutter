@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kt2/product/helper/padding.dart';
 import 'package:kt2/product/pages/cart/index.dart';
 import 'package:kt2/product/pages/detail/BottomBar.dart';
 
@@ -41,7 +40,7 @@ class ItemDetail extends StatelessWidget {
             actions: [
               AppBarIcon(Icons.favorite_outline),
               SizedBox(
-                width: PaddingCustom.horizontal,
+                width: 20,
               )
             ]),
       ),

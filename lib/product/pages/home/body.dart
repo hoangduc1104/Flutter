@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kt2/product/helper/padding.dart';
 import 'package:kt2/product/pages/home/category.dart';
 import 'package:kt2/product/pages/home/itemGrid.dart';
 import 'package:kt2/product/pages/home/itemList.dart';
@@ -125,22 +124,22 @@ class _BodyState extends State<Body> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(
-          height: PaddingCustom.vertical,
+          height: 20,
         ),
         const Text(
           "Search",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(
-          height: PaddingCustom.vertical,
+          height: 20,
         ),
         buildSearch(),
         const SizedBox(
-          height: PaddingCustom.vertical,
+          height: 20,
         ),
         SliderCategory(category: category, setCategory: setCategory),
         const SizedBox(
-          height: PaddingCustom.vertical,
+          height: 20,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -171,7 +170,7 @@ class _BodyState extends State<Body> {
           ],
         ),
         SizedBox(
-          height: PaddingCustom.vertical,
+          height: 20,
         ),
         builView(),
       ],

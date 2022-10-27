@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kt2/product/helper/padding.dart';
 import 'package:kt2/product/pages/cart/index.dart';
 import 'package:kt2/product/pages/home/body.dart';
 
@@ -49,16 +48,12 @@ class _HomePageState extends State<HomePage> {
           actions: [
             AppBarIcon(Icons.shopping_cart_sharp, redirectToCart),
             SizedBox(
-              width: PaddingCustom.horizontal,
+              width: 20,
             ),
-            // AppBarIcon(Icons.notifications_outlined, null),
-            // SizedBox(
-            //   width: PaddingCustom.horizontal,
-            // )
           ]),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: PaddingCustom.horizontal),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Body(),
         ),
       ),

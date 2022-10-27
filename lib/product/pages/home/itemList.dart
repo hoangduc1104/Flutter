@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kt2/product/helper/padding.dart';
 import 'package:kt2/product/model/Product.dart';
 import 'package:kt2/product/pages/detail/index.dart';
 
@@ -75,8 +74,7 @@ class ItemList extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: PaddingCustom.horizontal),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -86,7 +84,7 @@ class ItemList extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
-                          height: PaddingCustom.vertical,
+                          height: 20,
                         ),
                         buildTitle(item.title),
                         SizedBox(
